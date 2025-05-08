@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  corrosion:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: python corrosion.py
